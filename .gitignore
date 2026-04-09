@@ -1,0 +1,13 @@
+# Ignore all files and folders
+/*
+!.gitignore
+
+# Keep the specific files we need
+!m_for_lab_2.m
+!report_lab_2.tex
+!report_lab_2.pdf
+!task_lab_2.pdf
+
+# Allow directories to be traversed
+!*/
+
