@@ -3,6 +3,7 @@
 
 # Except these files
 !.gitignore
+!README.md
 !report_lab_2.pdf
 !task_lab_2.pdf
 
