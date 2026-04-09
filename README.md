@@ -91,7 +91,7 @@ python3 script_for_task1.py
 ```matlab
 m_for_lab_2
 
-% 1. Читает 8 data[U].txt файлов
+% 1. Читает 18 data[U].txt файлов
 % 2. Аппроксимирует кривые с учетом тока
 % 3. Строит графики в matlab/graphs/
 % 4. Выводит параметры K, Tm, R, L, J
@@ -99,18 +99,6 @@ m_for_lab_2
 % 6. Анализирует зависимости
 ```
 
-**Результаты в папке `matlab/graphs/`:**
-```
-angles/              — кривые углов для каждого U
-velocities/          — кривые скоростей для каждого U
-currents/            — кривые токов для каждого U
-comparison/          — эксперимент vs аппроксимация
-parameters/          — итоговые графики K, Tm, R, L
-static/              — статические характеристики
-U_I_dependence.png   — зависимость ток от напряжения
-U_omega_dependence.png — зависимость скорость от напряжения
-all_results.csv      — таблица всех параметров
-```
 
 ---
 
@@ -123,33 +111,14 @@ simulink EV3_motor_full_model.slx
 Модель включает:
 - Электрическую схему (L, R, ke)
 - Механическую часть (J, τ)
-- Блоки интегрирования ОДУ
+- Блоки интегрирования 
 
 ---
 
 ## Что получили?
 
-- [Отчёт (LaTeX)](./report/report_lab_2.tex) 
+- [Отчёт (LaTeX)](./report_lab_2.tex) 
 - [Отчёт (PDF)](./report/report_lab_2.pdf)
 - [MATLAB скрипт обработки](./matlab/m_for_lab_2.m)
-- [Simulink модель](./matlab/EV3_motor_full_model.slx)
-
-### 📈 Результаты & Графики
-
-#### Экспериментальные данные
-
-- [data/ папка](./data/)
-- [U_I.csv](./U_I.csv) — зависимость ток от напряжения
-- [all_results.csv](./matlab/graphs/all_results.csv) 
-
-#### Визуализация
-- [angles/](./matlab/graphs/angles/)  
-- [velocities/](./matlab/graphs/velocities/)  
-- [currents/](./matlab/graphs/currents/)
-- [comparison/](./matlab/graphs/comparison/) 
-- [parameters/](./matlab/graphs/parameters/)
-- [all_angles.png](./matlab/graphs/all_angles.png) 
-- [all_velocities.png](./matlab/graphs/all_velocities.png)
-- [all_currents.png](./matlab/graphs/all_currents.png)
 
 
